@@ -7,6 +7,130 @@
 </head>
 <body>
     <!-- Accordion -->
-     <h1>BLOG</h1>
+     
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- added daisyUI & Tailwind links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/53ea01123b.js" crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="./blog.html"> -->
+
+    <!-- Tailwind Custom Styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        customGreen: '#B4F461',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom styles -->
+    <style>
+        .font-lexend {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="font-lexend">
+    <header class="sticky top-0 z-10 backdrop-blur bg-transparent md:mb-5">
+        <nav class="bg-[#F9F7F3] ">
+            <!-- Navbar starts here -->
+            <div class="w-[90%] mx-auto pb-9 pt-4">
+                <!-- left -->
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <button class="bg-customGreen btn btn-lg text-xl font-semibold px-8 py-1"><a
+                                href="./index.html">Home</a></button>
+                    </div>
+                    <!-- middle -->
+                    <div class="navbar-center space-x-4">
+                        <img src="./assets/logo.png" alt="logo">
+                        <h1 class="text-xl font-semibold hidden md:block">Donate Bangladesh</h1>
+                    </div>
+
+                    <!-- right -->
+                    <div class="navbar-end space-x-2">
+                        <img src="./assets/coin.png" alt="">
+                        <h5 id="my-balance" class="text-xl font-semibold">5000</h5>
+                        <h4 class="text-xl font-semibold">BDT</h4>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- <div class="divider"></div> -->
+
+        </nav>
+        <!-- Navbar ends here -->
+
+    </header>
+
+    <main>
+        <h1 class="pl-7 md:pl-16 my-8 text-4xl text-success">Important FAQ <i
+                class="fa-sharp fa-2xl fa-light fa-question"></i></h1>
+        <section class="w-[80%] mx-auto space-y-5">
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>The DOM is a programming interface that represents a web page as a structured tree, allowing developers to dynamically modify its content, structure, and style using JavaScript.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>You can select elements using methods like selecting by ID, class, or CSS selectors, allowing you to target specific parts of the page for manipulation.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                    why is it useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation involves attaching a single event listener to a parent element to handle events from its children. It's efficient for handling multiple elements and works well with dynamic content.
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p>You can modify attributes like src or href, and update styles by directly changing CSS properties or adding/removing classes, allowing dynamic changes to content and appearance.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
 </body>
 </html>

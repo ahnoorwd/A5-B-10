@@ -1,6 +1,5 @@
 
-// Noakhali JS
-
+// about all info noakali 
 
 document.getElementById('donate-noakhali-btn').addEventListener('click', function (event) {
     event.preventDefault();
@@ -24,16 +23,16 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
         document.getElementById('noakhali-balance').innerText = noakhaliNewBalance;
 
         console.log('Noakhali Bal', noakhaliBalance);
-        // modal
+        // modals-bar
         document.getElementById('success-modal').classList.add('modal-open');
 
 
-        // trans
+        
         // Create div element
         const div = document.createElement('div');
         div.classList.add('w-[50%]', 'mx-auto', 'h-[100px]', 'border', 'border-5', 'border-gray-800');
 
-        // Noakhali History
+       
         // Get the current date and time
         const currentDate = new Date();
 
@@ -84,7 +83,7 @@ document.getElementById('donate-feni-btn').addEventListener('click', function (e
         document.getElementById('success-modal').classList.add('modal-open');
 
 
-        // Feni history
+      
         // Create div element
         const div = document.createElement('div');
         div.classList.add('w-[50%]', 'mx-auto', 'h-[100px]', 'border', 'border-5', 'border-gray-800');
@@ -134,7 +133,6 @@ document.getElementById('donate-quota-btn').addEventListener('click', function (
         // modal
         document.getElementById('success-modal').classList.add('modal-open');
 
-         // Quota history
         // Create div element
         const div = document.createElement('div');
         div.classList.add('w-[50%]', 'mx-auto', 'h-[100px]', 'border', 'border-5', 'border-gray-800');
@@ -159,8 +157,6 @@ document.getElementById('donate-quota-btn').addEventListener('click', function (
     }
 
 });
-
-
 
 // event handler of the modal
 document.getElementById('close-modal').addEventListener('click', function () {
