@@ -30,7 +30,9 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
         
         // Create div element
         const div = document.createElement('div');
-        div.classList.add('w-[50%]', 'mx-auto', 'h-[100px]', 'border', 'border-5', 'border-gray-800');
+        div.classList.add( 'w-[50%]', 'mx-auto', 'h-auto', 'p-5', 'border', 'border-gray-800', 
+  'rounded-lg', 'shadow-lg', 'bg-white', 'flex', 'flex-col', 'justify-center', 
+  'items-center', 'text-center', 'space-y-4');
 
        
         // Get the current date and time
@@ -38,8 +40,9 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
 
         // Format the inner HTML with the donation message and the date
         div.innerHTML = `
-        <p> ${noakhaliNewBalance} Taka is Donated for Noakhali-2024, Bangladesh </p>
-        <p>Date: ${currentDate}</p>
+        <h2 class="text-lg font-bold text-gray-900">Donation Update</h2>
+    <p class="text-gray-700">${noakhaliNewBalance} Taka is Donated for Noakhali-2024, Bangladesh</p>
+    <p class="text-sm text-gray-500 italic">Date: ${currentDate}</p>
     `;
 
         // Append the div to the history-container
@@ -86,15 +89,18 @@ document.getElementById('donate-feni-btn').addEventListener('click', function (e
       
         // Create div element
         const div = document.createElement('div');
-        div.classList.add('w-[50%]', 'mx-auto', 'h-[100px]', 'border', 'border-5', 'border-gray-800');
+        div.classList.add('w-[50%]', 'mx-auto', 'h-auto', 'p-5', 'border', 'border-gray-800', 
+  'rounded-lg', 'shadow-lg', 'bg-white', 'flex', 'flex-col', 'justify-center', 
+  'items-center', 'text-center', 'space-y-4');
 
         // Get the current date and time
         const currentDate = new Date();
 
         // Format the inner HTML with the donation message and the date
         div.innerHTML = `
-        <p> ${feniNewBalance} Taka is Feni-2024, Bangladesh </p>
-        <p>Date: ${currentDate}</p>
+        <h2 class="text-lg font-bold text-gray-900">Donation Update</h2>
+        <p> ${feniNewBalance} Taka Is Donated For Feni-2024, Bangladesh </p>
+        <p class="text-sm text-gray-500 italic">Date: ${currentDate}</p>
     `;
 
         // Append the div to the history-container
@@ -135,15 +141,18 @@ document.getElementById('donate-quota-btn').addEventListener('click', function (
 
         // Create div element
         const div = document.createElement('div');
-        div.classList.add('w-[50%]', 'mx-auto', 'h-[100px]', 'border', 'border-5', 'border-gray-800');
+        div.classList.add('w-[50%]', 'mx-auto', 'h-auto', 'p-5', 'border', 'border-gray-800', 
+        'rounded-lg', 'shadow-lg', 'bg-white', 'flex', 'flex-col', 'justify-center', 
+       'items-center', 'text-center', 'space-y-4');
 
         // Get the current date and time
         const currentDate = new Date();
 
         // Format the inner HTML with the donation message and the date
         div.innerHTML = `
-        <p> ${quotaNewBalance} Taka is Quota Movement help, Bangladesh </p>
-        <p>Date: ${currentDate}</p>
+         <h2 class="text-lg font-bold text-gray-900">Donation Update</h2>
+        <p> ${quotaNewBalance} Taka is Donated For Quota Movement 2024, Bangladesh </p>
+        <p class="text-sm text-gray-500 italic">Date: ${currentDate}</p>
     `;
 
         // Append the div to the history-container
